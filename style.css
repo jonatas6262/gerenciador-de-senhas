@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body,
+.container-input,
+.container-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(53, 53, 54);
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.container-input span {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container-input .slider {
+  appearance: none;
+  border-radius: 10px;
+  width: 400px;
+  margin: 15px 0;
+  padding: 2px;
+}
+
+.container-input .button-cta {
+  width: 400px;
+  height: 40px;
+  background-color: rgb(230, 183, 84);
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.container-password {
+  width: 400px;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.container-password .text-info {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container-password .password {
+  cursor: pointer;
+  background-color: rgba(105, 105, 105, 0.651);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  transition: ease-in-out 1s;
+}
+
+.container-password .password:hover {
+  transform: scale(1.2);
+}
+
+.container-password .text-copy {
+  color: rgb(211, 211, 211);
+  font-size: 16px;
+  font-weight: 300;
+  visibility: hidden;
+  transition: all 1.2s ease-in-out;
+  opacity: 0;
+}
+
+.container-password:hover .text-copy {
+  visibility: visible;
+  opacity: 1;
+}
