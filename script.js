@@ -6,7 +6,7 @@ const password = document.querySelector("#password")
 
 const containerPassword = document.querySelector("#container-password")
 
-const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@"
+const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*-_=+"
 let newPassword = ""
 
 sizePassword.innerHTML = sliderElement.value
